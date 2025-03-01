@@ -1,9 +1,9 @@
-javascript:(function(){var wpm = parseInt(prompt("How many WPM do you want the bot to type?"));
+javascript:(function(){var wpm = parseInt(prompt("How high do you want the WPM to be?"));
 var origwpm = wpm;
-if(isNaN(wpm)) return alert("Are you sure you entered a number? Try again please.");
-if(wpm > 150) if(!confirm("Are you sure you want your wpm that high? This could cause you to possibly be detected for cheating or cause you to lag.")) return alert("Ok, exiting.")
-if(wpm <= 0) return alert("Your WPM cant be that low!");
-alert("Starting auto-type.\nPlease note that mini-games currently dont work very well with auto-type.")
+if(isNaN(wpm)) return alert("No number entered");
+if(wpm > 150) if(!confirm("WPM higher that 150 could cause you to possibly to lag or freeze.")) return alert("Exiting...")
+if(wpm <= 0) return alert("Your WPM cant be less than 0");
+alert("Starting...")
 var i = 0;
 var lastIndex = -1;
 var cheat; 
