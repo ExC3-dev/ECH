@@ -20,7 +20,7 @@ javascript:(function(){
         cheat = setInterval(() => {
             setTimeout(() => {
                 // Check if we have reached the last character in the text
-                if (core.cur_char_index >= core.text.length - 1) {
+                if (core.cur_char_index >= core.text.length) {
                     core.bound_keypress_handler({ key: "Enter" }); // Press Enter to submit the last word
                     clearInterval(cheat); // Stop typing
                     return;
